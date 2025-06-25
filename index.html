@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Table & Form ">
+    <meta name="keywords" content="Html table & form adding in webpage">
+    <meta name="author" content="md mubashirul islam">
+    <title> Table & form ADD</title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1:hover{
+            text-align: center;
+            color: blue;
+            text-decoration: underline;
+            font-family: fantasy;
+        }
+        table{
+            text-align: center;
+            height: 200px;
+            width: 300px;
+            border-collapse: collapse;
+        }
+        th,td{
+           border: 2px solid;
+           padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> HTML Table & Form </h1>
+    </header>
+
+
+     <main>
+        <h2> HTML TABLE </h2>
+                <details> <br> <br>
+                <caption> Student info: </caption>
+                </details> <br>
+        <table>
+            <thead>
+               <tr>
+                  <th> Name </th>
+                  <th> ID   </th>
+                  <th> GPA  </th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Mubashir </td>
+                    <td> 101      </td>
+                    <td> 3.42     </td>
+                </tr>
+                <tr>
+                    <td> Abir </td>
+                    <td> 102  </td>
+                    <td> 3.55 </td>
+                </tr>
+                <tr>
+                    <td> Aminul </td>
+                    <td> 103    </td>
+                    <td> 3.66   </td>
+                </tr>
+            </tbody>
+        </table> <br> <br> <br>
+ 
+           <h2> HTML FORM </h1>
+            <caption>
+                Register Form
+               <details> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+               </details>
+            </caption>
+
+          <fieldset>
+               <form action=""> <br>
+                  <div>
+                      <label for="FULL NAMAE"> FullName :</label> &nbsp;
+                      <input type="text" name="fullname" id="Fullname">
+                  </div> <br>
+                  <div>
+                      <label for="Email"> Email :</label> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                      <input type="email" name="Email" id="email" required>
+                  </div> <br>
+                  <div>
+                       <label for="password">Password :</label> &nbsp;
+                       <input type="password" name="password" id="password" required>
+                  </div> <br>
+                  <div>
+                       <label for="file">File :</label>
+                       <input type="file" name="photo" id="Photo">
+                  </div> <br>
+                  <div>
+                        <label for="Gender">Gender :</label>
+                        <input type="radio" name="male" id="male" value="Male">Male 
+                        <input type="radio" name="female" id="female" value="Female"> Female                </div>
+                  </div><br>
+                  <div>
+                    <label for="Religion">Relegion :</label>
+                    <input type="checkbox" name="Islam" id="Islam" value="Islam">Islam
+                    <input type="checkbox" name="hindu" id="hindu" value="hindu">Hindu
+                    <input type="checkbox" name="others" id="others" value="Others">Others
+                  </div> <br>
+                   <div>
+                    <label for="Department">Department :</label>
+                    <select> <br>
+                        <option value="CSE"> CSE </option>
+                        <option value="EEE"> EEE </option>
+                        <option value="LLB"> LLB </option>
+                    </select>
+                   </div> <br>
+                   <div>
+                    <label for="message">Message :</label> <br> <br>
+                    <textarea cols="20" rows="5"></textarea>
+                   </div> <br>
+                   <div>
+                    <input type="submit" value="Register"> &nbsp; &nbsp;
+                    <input type="reset" value="Clear">
+                   </div>
+
+                    <br>
+               </form>
+          </fieldset>
+
+     </main>
+</body>
+</html>
