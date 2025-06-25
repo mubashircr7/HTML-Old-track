@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="html api">
+    <meta name="keywords" content="html">
+    <meta name="author" content="md mubashirul islam">
+    <title> Api Form in html</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+        }
+        hi:hover{
+            text-align: center;
+            text-decoration: underline;
+            color: blueviolet;
+            background: #d1aaaa;
+            font-family: fantasy;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> HTML Api used: </h1>
+    </header>
+    <main>
+    <form action="https://formspree.io/f/mblykqaa" method="post">
+       <div>
+          <label for="name">Your Name: </label>
+          <input type="text"vname="name" id="name">
+       </div> <br>
+
+      <div>
+           <label for="email">Your Email: </label>
+           <input type="email" name="email" id="email">
+      </div> <br>
+
+        <div>
+            <label for="message">Message:</label> <br>
+            <textarea name="message" id="message" cols="20" rows="5"></textarea>
+        </div> <br>
+        <button type="submit">Submit</button>
+</form>
+</main>
+</body>
+</html>

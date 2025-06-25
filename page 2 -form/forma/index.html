@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Form </title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1:hover{
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Create Form In HTML</h1>
+    </header>
+    <main>
+         <details>
+            html form in webpage and control api in the freedeyployed server
+            <summary>
+                Registration From :
+            </summary>
+         </details> <br><br>
+
+       <form action="https://formspree.io/f/mblykqaa" method="post">
+            <fieldset> <br><br>
+                <div>
+                <label for="Name">Name :</label>&nbsp; &nbsp; &nbsp; 
+                <input type="text" name="name" id="name" required>
+            </div> <br>
+            <div>
+                <label for="Email">Email :</label> &nbsp; &nbsp; &nbsp;
+                <input type="email" name="email" id="email" required>
+            </div> <br>
+
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" required>
+            </div> <br>
+            <div>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+               <input type="button" value="Sign-up">&nbsp; &nbsp;
+                <input type="Submit" value="login">
+            </div>
+            </fieldset> <br> <br>
+           
+            <div>
+                <label for="photo"> Photo :</label>
+                <input type="file" name="photo" id="photo">
+            </div> <br>
+            <div>
+                <label for="Gender">Gender :</label>
+                <input type="radio" name="gender" id="gender" value="male">Male
+                <input type="radio" name="gender" id="gender" value="Female">Female
+            </div> <br> 
+             <div>
+                <label for="Religion">Religion :</label>
+                <input type="checkbox" name="c1" id="c1" value="Islam">Islam
+                <input type="checkbox" name="c2" id="c2" value="hindu">hindu
+                <input type="checkbox" name="c3" id="c3" value="others">Hindu
+            </div> <br>
+            <div>
+                <label for="message">Message :</label> <br>
+                <textarea name="Message" id="message" cols="20" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="submit"> &nbsp; &nbsp; &nbsp
+                <input type="reset" value="Clear">
+            </div>
+       </form>
+    </main>
+</body>
+</html>
